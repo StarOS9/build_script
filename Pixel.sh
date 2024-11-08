@@ -17,6 +17,8 @@ repo init -u https://github.com/Project-PixelStar/manifest -b 14-qpr3 --git-lfs
 # repo sync
 /opt/crave/resync.sh
 # cloning DT
+# remove vendor/pixelstar
+rm -rf vendor/pixelstar
 # device tree
 git clone https://github.com/StarOS9/device_xiaomi_mojito.git --depth 1 -b mojito-universe device/xiaomi/mojito
 git clone https://github.com/StarOS9/android_device_xiaomi_sm6150-common.git --depth 1 -b mojito-universe device/xiaomi/sm6150-common
@@ -27,6 +29,8 @@ git clone https://gitlab.com/Sepidermn/android_vendor_xiaomi_mojito.git --depth 
 git clone https://gitlab.com/Sepidermn/android_vendor_xiaomi_sm6150-common.git --depth 1 -b 14 vendor/xiaomi/sm6150-common
 # hardware tree
 git clone https://github.com/StarOS9/android_hardware_xiaomi.git --depth 1 -b mojito hardware/xiaomi
+# add vendor/pixelstar
+git clone https://github.com/StarOS9/vendor_pixelstar.git --depth 1 -b  Project-PixelStar vendor/pixelstar
 # set build environment
 . build/envsetup.sh
 # lunch

@@ -30,7 +30,7 @@ git clone https://gitlab.com/Sepidermn/android_vendor_xiaomi_sm6150-common.git -
 # hardware tree
 git clone https://github.com/StarOS9/android_hardware_xiaomi.git --depth 1 -b mojito hardware/xiaomi
 # add vendor/pixelstar
-git clone https://github.com/StarOS9/vendor_pixelstar.git --depth 1 -b  Project-PixelStar vendor/pixelstar
+git clone https://github.com/StarOS9/vendor_pixelstar.git --depth 1 -b 14-qpr3 vendor/pixelstar
 # set build environment
 . build/envsetup.sh
 # lunch
